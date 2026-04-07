@@ -4,8 +4,10 @@ import { resolveDidDocument } from '../../utils';
 import { RootInfo, StateInfo, StateProof } from '../entities';
 import { IStateStorage } from '../interfaces';
 import { DID, Id } from '@iden3/js-iden3-core';
-import { JsonRpcProvider } from 'ethers';
 import { VerifiableConstants } from '../../verifiable';
+
+import { JsonRpcProvider } from 'ethers';
+
 
 export class DidResolverStateReadonlyStorage implements IStateStorage {
   constructor(private readonly resolverUrl: string) {}
