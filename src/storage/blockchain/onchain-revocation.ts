@@ -1,9 +1,12 @@
 import { RevocationStatus, Issuer } from '../../verifiable';
 import { Contract, JsonRpcProvider, Signer, TransactionReceipt, TransactionRequest } from 'ethers';
+
 import { Proof, NodeAuxJSON, Hash } from '@iden3/js-merkletree';
 import { EthConnectionConfig } from './state';
 import abi from '../blockchain/abi/CredentialStatusResolver.json';
 import { ITransactionService, TransactionService } from '../../blockchain';
+
+
 
 /**
  * OnChainRevocationStore is a class that allows to interact with the onchain contract
